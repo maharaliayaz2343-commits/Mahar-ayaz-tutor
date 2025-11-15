@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Ayaz Tutors</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Ayaz Tutors</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p>Phone: 0342-1311660<br>Email: mumtazalia496@gmail.com</p>
+
+    <!-- OPTION A: Formspree (replace ACTION with your Formspree URL) -->
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label>
+        Your name<br>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email<br>
+        <input type="email" name="_replyto" required>
+      </label>
+      <label>
+        Message<br>
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <hr>
+    <!-- OPTION B: quick mailto fallback -->
+    <p>Or email directly: <a href="mailto:mumtazalia496@gmail.com">mumtazalia496@gmail.com</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Ayaz Tutors • Hyderabad</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
